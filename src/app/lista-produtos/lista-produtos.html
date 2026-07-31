@@ -17,7 +17,8 @@
     <div id="div-lista">
         <!-- @empty FUNCIONA COMO else-->
         @for(elem of listaItens; track elem.idProduto){
-            <div class="div-item"> {{elem.idProduto}} - {{elem.descricaoProduto}} - R$ {{elem.valorUnitario?.toFixed(2)?.replace('.',',')}} </div>
+            
+            <div class="div-item"> <input type="checkbox"> {{elem.idProduto}} - {{elem.descricaoProduto}} - R$ {{elem.valorUnitario?.toFixed(2)?.replace('.',',')}} </div>
         } @empty {
             <div class="div-item"> NENHUM ITEM ADICIONADO!! </div>
         }
