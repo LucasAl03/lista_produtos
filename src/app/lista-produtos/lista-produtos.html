@@ -6,11 +6,11 @@
         <input type="text" id="descricao" name="descricao" [(ngModel)]="descricao_produto">
 
         <label for="valor_unitario">Valor Unitário</label>
-        <input type="text" id="valor_unitario" name="valor_unitario" [(ngModel)]="valor_unitario">
+        <input type="number" id="valor_unitario" name="valor_unitario" [(ngModel)]="valor_unitario">
 
         <div id="div-btns">
             <button type="submit" id="btnAdd" (click)="addItem()"> Adicionar </button>
-            <button type="button" id="btnLimpar"> Limpar </button>
+            <button type="button" id="btnLimpar" (click)="btnLimpar()"> Limpar </button>
         </div>
     </form>
 
