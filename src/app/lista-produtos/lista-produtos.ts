@@ -39,8 +39,7 @@ export class ListaProdutos {
   }
 
   btnLimpar(){
-    this.descricao_produto = ``
-    this.valor_unitario = 0.0
+    this.listaItens = []
   }
 
 }
